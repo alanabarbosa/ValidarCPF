@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Validar CPF</title>
+	<script type="text/javascript" src="form.js"></script>
+	<style>	
+	body{
+		background: #000;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	.business{
+		width: 500px;		
+	}	
+	img{
+		width: 100%;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+
+	}
+	.container {
+		display: flex;
+        border: none;
+        background-color: #fff;
+        border-radius: 10px;          
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 15%;
+        width: 990px;
+	}
+	.container .form{		
+		width: 500px;
+		display: inline-flex;	
+		justify-content: center;
+		align-items: center;
+
+	}
+	.form #numero{
+		padding: 8px 60px;
+		border-radius: 10px;	
+	}
+	.form .btn{
+		border-radius: 10px;
+		background-color: #000;
+		color: #fff;
+		border: none;
+		padding: 10px 20px;	
+		
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">	
+	<div class="business">
+		<img src="business.jpg">
+	</div>
+
+	<div class="form">
+	<form method="POST" onsubmit="return validar()">
+		<h1>Digite seu CPF:</h1>		
+		<input type="text" name="numero" id="numero" placeholder="Digite seu CPF" /><br/><br/>
+
+		<input type="submit" value="Enviar" class="btn" />
+	</form>
+	</div>
+	</div>
+</body>
+</html>
